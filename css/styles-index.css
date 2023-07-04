@@ -6,6 +6,8 @@ body {
   background-color: yellowgreen;
   line-height: 1.6rem;
   letter-spacing: 0.02;
+  margin-left: 20px;
+  align-content: center;
 }
 section .container1 {
   display: flex;
@@ -42,6 +44,8 @@ header img {
   color: rgb(179, 0, 0);
   font-weight: 400;
   list-style: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 ul,
@@ -97,6 +101,8 @@ footer {
   height: 100px;
   background-color: dark green;
   max-width: 800px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .footer1 {
   display: flex;

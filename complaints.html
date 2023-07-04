@@ -30,70 +30,127 @@
       </section>
     </header>
     <main>
-      <section>
-        <form id="complaints_form">
-          <fieldset>
-            <legend>Customer complaints form</legend>
-            <label for="name of complainant">
-              Please let us know your name
-              <input
-                type="text"
-                name="complainant"
-                id="complainantName"
-                placeholder="Your name"
-                required
-              />
-            </label>
-            <label for="complainant telephone number"
-              >Your telephone number
-              <input
-                type="text"
-                name="telNumber"
-                id="telNo"
-                placeholder=" Your telephone number"
-              />
-            </label>
-            <label for="complainantType"> You are a</label>
-            <select name="complainantType" id="complainantType">
-              <option value="consumer">Consumer</option>
-              <option value="customer">Customer</option>
-              <option value="authority">Authority</option>
-            </select>
-
-            <label for="issueRelateTo">What is the issue</label>
-            <select name="issueRelatedTo" id="issueRelatedTo">
-              <option value="foodSafetyIssue">Food safety issue</option>
-              <option value="ciderQualityIssue">Food quality issue</option>
-              <option value="ciderPackagingIssue">Packaging Issue</option>
-              <option value="deliveryIssue">deliveryIssue</option>
-            </select>
-            <p>Brief description of the issue</p>
-            <label for="Brief description of issue">
-              <input
-                type="text"
-                name="briefDescriptionOfIssue"
-                id="briefDescriptionOfIssue"
-                placeholder="Brief description of your complaint"
-                required
-              />
-            </label>
-        <div class="date_submit">
-            <label for="complaintDate">
-              Date
-              <input
-                type="date"
-                id="complaintDate"
-                name="complaintDate"
-                placeholder="Date"
-              />
-            </label>
-            <button type="submit">Submit</button>
-            </fieldset>
-            </form>
-        </div> 
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsam est laboriosam laborum illum necessitatibus vel, debitis facilis, omnis, ut dolorem possimus id. Animi placeat, repellat dolor tenetur impedit cum?</p>
+      <!-- complaints form -->
+      <section class="form_Etc_Section" >
+        <div class="form_And_Instructions">
+          <div>
+            <form id="complaintsForm">
+              <fieldset>
+                <legend>Customer complaints/feedback form</legend>
+                <label for="name of complainant">
+                  Please let us know your name
+                  <input
+                    type="text"
+                    name="complainant"
+                    id="complainantName"
+                    placeholder="Your name"
+                    required
+                  />
+                </label>
+                <label for="complainant telephone number"
+                  >Your telephone number
+                  <input
+                    type="text"
+                    name="telNumber"
+                    id="telephoneNumber"
+                    placeholder=" Your telephone number"
+                  />
+                </label>
+                <label for="complainantType"> You are a</label>
+                <select name="complainantType" id="complainantType">
+                  <option value="advice1">Choose one from list</option>
+                  <option value="consumer">Consumer</option>
+                  <option value="customer">Customer</option>
+                  <option value="authority">Authority</option>
+                </select>
+    
+                <label for="issueRelateTo">What is the issue</label>
+                <select name="issueRelatedTo" id="issueRelatedTo">
+                  <option value="advice2">Choose one from list</option>
+                  <option value="foodSafetyIssue">Food safety issue</option>
+                  <option value="ciderQualityIssue">Food quality issue</option>
+                  <option value="ciderPackagingIssue">Packaging Issue</option>
+                  <option value="deliveryIssue">DeliveryIssue</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+                <p>Brief description of the issue</p>
+                <label for="Brief description of issue">
+                  <input
+                    type="text"
+                    name="briefDescriptionOfIssue"
+                    id="briefDescriptionOfIssue"
+                    placeholder="Brief description of your complaint"
+                    required
+                  />
+                </label>
+                <div class="date_submit">
+                  <label for="complaintDate">
+                      Date
+                      <input
+                        type="date"
+                        id="complaintDate"
+                        name="complaintDate"
+                        placeholder="Date"
+                      />
+                    </label>
+                    <button type="button" id="submitButton">Submit</button>
+                    <!-- <input type="submit" onclick="submitForm()" value="submit"/> -->
+                    </fieldset>
+                    </form>
+                </div> 
+            <!-- end of form -->
+<script>
+  // function submitForm(){
+  //   console.log("submit button click");
+  // }
+</script>
+          </div>
+          
+          <div class="ins-complete">
+            <h2 class="ins">Instruction for completing the form</h2>
+            <p class="ins_p">Thank you for taking time to visit our website and you have reason to contact us regarding either a concern or a feedback that we will use in a productive manner. Please complete the form as much as you can and then submit it.  We will contact you in due course. Should you wish us to contact you please leave us contact details. [please click on the arrow head for details]
+            <article class="summary_instructions">
+              <details>
+                  <summary>Your name</summary> 
+                  <p>Your name, include your title if we should use it</p>
+              </details>
+              <details>
+                      <summary>Your telephone number</summary>
+                      <p>This is for us to contact you.  This is not a must but we appreciate having it. We will comply with GDPA when dealing with it with your concent</p>
+              </details>
+               <details>
+                      <summary>Consumer, Customer, Authority</summary>
+      
+                        <ul class="list_sum">
+                          <li><h3>Consumer: you are an end product user. A consumer that we love to hear from about our products</h3></li>
+                          <li><h3>Customer: you stock our products and sell them to the end user, consumer</h3></li>
+                          <li><h3>Authority: Local authority interested in contacting us in relation to a complaint or otherwise</h3></li>
+                        </ul>
+  
+              </details>
+              <details>
+                <summary>What is it about, the issue</summary>
+                <p>Choose the right category, if the category is not there please let us know we will contact you and look into it.</p>
+              </details>
+              <details>
+                <summary>Brief descripton of issue/feedback</summary>
+                <p>Please describe beiefly what the issue is or your feedback is.</p>
+              </details>
+              <details>
+                <summary>Date</summary>
+                <p>The date you submit the complain/feedback</p>
+              </details>
+              Submit it by pressing the submit button.
+              Please be assured we value your custom, we value your feedback.
+              
+          </article>
+          
+          
+          </div>
         </div>
+        
+
+
       </section>
     </main>
     <footer>
