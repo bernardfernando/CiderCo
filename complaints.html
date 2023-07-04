@@ -3,24 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cawston Cider Co</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="/css/styles-complaints.css" />
   </head>
   <body>
     <header>
-      <img
-        class="logo1"
-        src="/images/logo for video 600x316_2.svg"
-        alt="Logo a red apple with a single green leaf"
-      />
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about_us.html">About Us</a></li>
-          <li><a href="contacts.html">Contacts</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="surveys.html">Surveys</a></li>
-        </ul>
-      </nav>
+      <section class="container1">
+        <div class="header1">
+          <div class="img_logo">
+            <img
+              src="/images/logo for video 600x316_2.svg"
+              alt="Logo a red apple with a single green leaf"
+            />
+          </div>
+          <div class="nav1">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="surveys.html">Surveys</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </header>
+    <main>
+      <section>
+        <form id="complaints_form">
+          <fieldset>
+            <legend>Customer complaints form</legend>
+            <label for="name of complainant">
+              Please let us know your name
+              <input
+                type="text"
+                name="complainant"
+                id="complainantName"
+                placeholder="Your name"
+                required
+              />
+            </label>
+            <label for="complainant telephone number"
+              >Your telephone number
+              <input
+                type="text"
+                name="telNumber"
+                id="telNo"
+                placeholder=" Your telephone number"
+              />
+            </label>
+            <label for="complainantType"> You are a</label>
+            <select name="complainantType" id="complainantType">
+              <option value="consumer">Consumer</option>
+              <option value="customer">Customer</option>
+              <option value="authority">Authority</option>
+            </select>
+
+            <label for="issueRelateTo">What is the issue</label>
+            <select name="issueRelatedTo" id="issueRelatedTo">
+              <option value="foodSafetyIssue">Food safety issue</option>
+              <option value="ciderQualityIssue">Food quality issue</option>
+              <option value="ciderPackagingIssue">Packaging Issue</option>
+              <option value="deliveryIssue">deliveryIssue</option>
+            </select>
+            <p>Brief description of the issue</p>
+            <label for="Brief description of issue">
+              <input
+                type="text"
+                name="briefDescriptionOfIssue"
+                id="briefDescriptionOfIssue"
+                placeholder="Brief description of your complaint"
+                required
+              />
+            </label>
+           <div class="date_submit">
+            <label for="complaintDate">
+              Date
+              <input
+                type="date"
+                id="complaintDate"
+                name="complaintDate"
+                placeholder="Date"
+              />
+            </label>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+           </div> 
+        
+      </section>
+    </main>
+    <footer>
+      <hr class="horizontal_line" />
+      <div class="footer1">
+        <div class="address">
+          <li>High Street</li>
+          <li>Cawston</li>
+          <li>Norwich</li>
+          <li>UK</li>
+        </div>
+        <div class="opening_hours">
+          <li>Monday - Friday 8am to 5pm</li>
+          <li>Saturday 8am to 4pm</li>
+          <li>Sunday Closed</li>
+        </div>
+        <div class="directions">
+          <a href="https://goo.gl/maps/X6PAxqRuQbRzJB1BA">Directions</a>
+        </div>
+        <div class="social_media"><p>Social Media</p></div>
+      </div>
+    </footer>
   </body>
 </html>
