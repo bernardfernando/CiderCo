@@ -2,9 +2,9 @@
 console.log("yest it works");
 
 // selecting the form
-const form = document.getElementById("complaintsForm");
+const form = document.getElementById("messageForm");
 
-const submitButton = document.getElementById("submitButton");
+//const submitButton = document.getElementById("submitButton");
 
 // add an event listener
 form.addEventListener("submit", onFormSubmit);
@@ -17,7 +17,7 @@ function onFormSubmit(event) {
   const telePhoneNumber = data.get("telNumber");
   const complainantCategory = data.get("complainantType");
   const complaintCategory = data.get("issueRelatedTo");
-  const briefDescription = data.get("briefDescriptionOfIssue");
+  const briefDescription = data.get("briefDescriptionOfMessage");
   const dateComplaintLodged = data.get("complaintDate");
   console.log(
     `Name: ${name}, Telephone: ${telePhoneNumber}, ComplainanantCategory, ${complainantCategory}, ComplaintCategory : ${complaintCategory}, Brief Description : ${briefDescription},Date: ${dateComplaintLodged}`

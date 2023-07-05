@@ -6,7 +6,7 @@ body {
   background-color: yellowgreen;
   line-height: 1.6rem;
   letter-spacing: 0.02;
-  margin-left: 20px;
+  margin-left: 30px;
   align-content: center;
 }
 section .container1 {
@@ -75,13 +75,24 @@ header .header_horizontal_line {
   color: rgb(179, 0, 0);
   border: none;
 }
-
-.vid_text {
+.img_text {
   display: flex;
   flex-direction: row;
-  align-content: space-between;
+  align-content: first baseline;
+  margin-right: 20px;
   max-width: 800px;
-  margin-top: 30px;
+  padding-left: 20px;
+}
+.image_aboutus1 img {
+  max-width: 250px;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  border-radius: 4px;
+  padding: 5px;
+  margin-left: 30px;
+}
+.text_aboutus1 p,
+h2 {
+  margin-left: 20px;
 }
 
 h2 {
@@ -91,15 +102,13 @@ h2 {
   font-weight: 400;
   font-size: 1.5rem;
 }
-.vid_text h2,
+
 p {
   color: rgb(179, 0, 0);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-.vid_text > div {
-  margin-left: 20px;
-}
+
 .labels_4 > img {
   max-width: 65px;
   height: auto;
