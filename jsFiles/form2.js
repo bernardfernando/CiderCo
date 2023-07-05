@@ -23,3 +23,16 @@ function onFormSubmit(event) {
     `Name: ${name}, Telephone: ${telePhoneNumber}, ComplainanantCategory, ${complainantCategory}, ComplaintCategory : ${complaintCategory}, Brief Description : ${briefDescription},Date: ${dateComplaintLodged}`
   );
 }
+
+// log number
+function generateId() {
+  let complaintsId = this.userName + complaintsLog.length(pushComplaint) + 1;
+}
+
+//function to handle each submission
+//function handleFormSubmission
+
+// passing information to local storage
+function setLocalStorage() {
+  localStorage.setItem("complaints", JSON.stringify(complaintsLog));
+}

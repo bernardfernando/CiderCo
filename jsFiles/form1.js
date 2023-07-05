@@ -10,10 +10,11 @@ const submitButton = document.getElementById("submitButton");
 submitButton.addEventListener("click", collectFormData);
 // console.log(formData);
 
-const complaintLog = [];
+const complainstLog = [];
 
 function collectFormData() {
-  let formData = document.forms["complaintsForm"];
+  event.preventDefault(); // this func doesn't have an event.
+  let formData = document.form["complaintsForm"];
   let userName = formData["complainantName"].value;
   let userTelephone = formData["telephoneNumber"].value;
   let complainantCategory = formData["complainantType"].value;
@@ -92,4 +93,12 @@ function saveMode(a) {
 // log number
 function generateId() {
   let complaintsId = this.userName + complaintsLog.length() + 1;
+}
+
+//function to handle each submission
+//function handleFormSubmission
+
+// passing information to local storage
+function setLocalStorage() {
+  localStorage.setItem("complaints", JSON.stringify(complaintsLog));
 }
