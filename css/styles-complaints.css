@@ -90,19 +90,19 @@ header .header_horizontal_line {
 }
 
 .form_Etc_Section > div {
-  width: 50%;
+  width: 100%;
 }
 .form_Etc_Section:first-child {
   width: 100%;
 }
 
 .form_Etc_Section:nth-child(2) {
-  width: 50%;
+  width: 80%;
 }
 
 form {
   border: 1px solid salmon;
-  width: 100%;
+  width: 80%;
   max-width: 450px;
   display: flex;
   margin-top: 1rem;
@@ -114,9 +114,10 @@ form {
   color: rgb(179, 0, 0);
 }
 
-#complaintsForm {
+#messageForm {
   display: flex;
   flex-direction: column;
+  width: 400px%;
 }
 
 fieldset {
@@ -128,10 +129,11 @@ fieldset {
   flex-wrap: wrap;
   color: rgb(179, 0, 0);
   width: 100%;
+  padding: 20px;
 }
 
 fieldset > input {
-  width: 100%;
+  width: 60%;
   color: rgb(179, 0, 0);
   background-color: rgb(150, 193, 63);
 }
@@ -142,9 +144,9 @@ fieldset legend {
 
 input[type="text"],
 select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px p;
+  width: 80%;
+  padding: 5px 8px;
+  margin: 7px;
   display: flex;
   flex-direction: column;
   border: 1px solid rgb(179, 0, 0);
