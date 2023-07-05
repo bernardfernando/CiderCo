@@ -12,23 +12,23 @@ submitButton.addEventListener("click", collectFormData);
 
 const complaintLog = [];
 
-// function collectFormData() {
-//   let formData = document.forms["complaintsForm"];
-//   let userName = formData["complainantName"].value;
-//   let userTelephone = formData["telephoneNumber"].value;
-//   let complainantCategory = formData["complainantType"].value;
-//   let complaintCategory = formData["issueRelatedTo"].value;
-//   let briefDescription = formData["briefDescriptionOfIssue"].value;
-//   let date = formData["complaintDate"].value;
-
 function collectFormData() {
-  let formData = document.forms.complaintsForm;
-  let userName = formData.complainantName.value;
-  let userTelephone = formData.telephoneNumber.value;
-  let complainantCategory = formData.complainantType.value;
-  let complaintCategory = formData.issueRelatedTo.value;
-  let briefDescription = formData.briefDescriptionOfIssue.value;
-  let date = formData.complaintDate.value;
+  let formData = document.forms["complaintsForm"];
+  let userName = formData["complainantName"].value;
+  let userTelephone = formData["telephoneNumber"].value;
+  let complainantCategory = formData["complainantType"].value;
+  let complaintCategory = formData["issueRelatedTo"].value;
+  let briefDescription = formData["briefDescriptionOfIssue"].value;
+  let date = formData["complaintDate"].value;
+
+  // function collectFormData() {
+  //   let formData = document.forms.complaintsForm;
+  //   let userName = formData.complainantName.value;
+  //   let userTelephone = formData.telephoneNumber.value;
+  //   let complainantCategory = formData.complainantType.value;
+  //   let complaintCategory = formData.issueRelatedTo.value;
+  //   let briefDescription = formData.briefDescriptionOfIssue.value;
+  //   let date = formData.complaintDate.value;
 
   const ccf = new CustomerComplaintFeedback(
     userName,
@@ -70,7 +70,7 @@ function CustomerComplaintFeedback(
 ) {
   this.userName = userName;
   this.userTelephone = userTelephone;
-  this.complainantCategory = customerCategory;
+  this.complainantCategory = complainantType;
   this.complaintsCategory = complaintCategory;
   this.briefDescription = briefDescription;
   this.date = date;

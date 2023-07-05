@@ -84,20 +84,20 @@ header .header_horizontal_line {
   display: flex;
   flex-direction: row;
   max-width: 90%;
-  /* align-content: normal; */
-  /* margin: 20px;
-  pad: 10px; */
+  align-content: normal;
+  margin: 20px;
+  pad: 10px;
 }
 
 .form_Etc_Section > div {
   width: 50%;
 }
 .form_Etc_Section:first-child {
-  width: 40%;
+  width: 100%;
 }
 
 .form_Etc_Section:nth-child(2) {
-  width: 60%;
+  width: 50%;
 }
 
 form {
@@ -114,14 +114,20 @@ form {
   color: rgb(179, 0, 0);
 }
 
+#complaintsForm {
+  display: flex;
+  flex-direction: column;
+}
+
 fieldset {
-  border: 1px salmon;
+  border: 1px rgb(179, 0, 0);
   font-size: 1rem;
   margin-top: 0rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   color: rgb(179, 0, 0);
+  width: 100%;
 }
 
 fieldset > input {
