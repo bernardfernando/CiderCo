@@ -42,8 +42,38 @@ function CustomerComplaintFeedback(
 
 // counting clicks
 function renderMessages() {
-  //console.log("your results are in heree")
+  // create the table headers
+  createTableHeaders();
 
+  for (let i = 0; i < messageLog.length; i++) {
+    let tr = document.createElement("tr");
+    let td = document.createElement("td");
+    td.textContent = messageLog[i].userName;
+    tr.appendChild(td);
+    let td1 = document.createElement("td");
+    td1.textContent = messageLog[i].userTelephone;
+    tr.appendChild(td1);
+    let td2 = document.createElement("td");
+    td2.textContent = messageLog[i].userEmail;
+    tr.appendChild(td2);
+    let td3 = document.createElement("td");
+    td3.textContent = messageLog[i].userCategory;
+    tr.appendChild(td3);
+    let td4 = document.createElement("td");
+    td4.textContent = messageLog[i].complaintsCategory;
+    tr.appendChild(td4);
+    let td5 = document.createElement("td");
+    td5.textContent = messageLog[i].briefDescription;
+    tr.appendChild(td5);
+    let td6 = document.createElement("td");
+    td6.textContent = messageLog[i].date;
+    tr.appendChild(td6);
+    table.appendChild(tr);
+  }
+  viewMessageButton.removeEventListener("click", renderMessages);
+}
+
+function displayAsOrderlyList() {
   let ul = document.querySelector("ul");
   if (messageLog.length == 0) {
     let li = document.createElement("li");
@@ -54,15 +84,44 @@ function renderMessages() {
       let li = document.createElement("li");
       li.textContent = `Name: ${messageLog[i].userName},
       Tel : ${messageLog[i].userTelephone},
-      \r\nEmail: ${messageLog[i].userEmail},
-      \nUser type: ${messageLog[i].userCategory},
-      \nComplaint-Feedback: ${messageLog[i].complaintsCategory},
-      \nDescription: ${messageLog[i].briefDescription}
-      \nDate: ${messageLog[i].date},
+      Email: ${messageLog[i].userEmail},
+      User type: ${messageLog[i].userCategory},
+      Complaint-Feedback: ${messageLog[i].complaintsCategory},
+      Description: ${messageLog[i].briefDescription}
+      Date: ${messageLog[i].date},
       `;
       ul.appendChild(li);
     }
   }
 }
-
 checkLocalStorage();
+
+// ============================
+/////chart data
+const users = ["consumer", "customer", "authority"];
+const complaintCategories = [
+  "Name",
+  "Telephone",
+  "E-mail Address",
+  "User Category",
+  "Complaint",
+  "Brief Description",
+  "Date",
+];
+
+///* introduce a table here  */
+const complaintsTable = document.getElementById("complaintsTable");
+const table = document.createElement("table");
+// table headers
+complaintsTable.appendChild(table);
+function createTableHeaders() {
+  const tr = document.createElement("tr");
+  const th = document.createElement("th");
+  table.appendChild(tr);
+
+  for (let i = 0; i < complaintCategories.length; i++) {
+    const th = document.createElement("th");
+    th.textContent = complaintCategories[i];
+    tr.appendChild(th);
+  }
+}

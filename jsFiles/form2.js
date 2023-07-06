@@ -40,7 +40,7 @@ function collectFormData() {
     userTelephone,
     userEmail,
     userCategory,
-    messageCategory,
+    complaintsCategory,
     briefDescription,
     messageDate
   );

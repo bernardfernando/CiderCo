@@ -4,10 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cider Co messages</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles-messages.css" />
   </head>
   <body>
+    <header>
+      <section class="container1">
+        <div class="header1">
+          <div class="img_logo">
+            <img
+              src="/images/logo for video 600x316_2.svg"
+              alt="Logo a red apple with a single green leaf"
+            />
+          </div>
+          <div class="nav1">
+            <!-- <ul>
+              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="complaints.html">Complaints</a></li>
+              <li><a href="surveys.html">Surveys</a></li>
+              <li><a href="messages.html">Messages</a></li>
+            </ul> -->
+            <a href="home">Home page</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contacts.html">Contacts</a>
+          </div>
+        </div>
+      </section>
+    </header>
     <button id="messages">View Messages</button>
+    <div id="messages1"></div>
     <ul></ul>
+    <table id="complaintsTable"></table>
+
+    <footer>
+      <hr class="horizontal_line" />
+      <div class="footer1">
+        <div class="address">
+          <li>High Street</li>
+          <li>Cawston</li>
+          <li>Norwich</li>
+          <li>UK</li>
+        </div>
+        <div class="opening_hours">
+          <li>Monday - Friday 8am to 5pm</li>
+          <li>Saturday 8am to 4pm</li>
+          <li>Sunday Closed</li>
+        </div>
+        <div class="directions">
+          <a href="https://goo.gl/maps/X6PAxqRuQbRzJB1BA">Directions</a>
+        </div>
+        <div class="social_media"><p>Social Media</p></div>
+      </div>
+    </footer>
   </body>
   <script src="/jsFiles/renderMessages.js"></script>
 </html>

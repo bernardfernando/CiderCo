@@ -30,7 +30,7 @@ header img {
 }
 
 .img_logo {
-  max-width: 150px;
+  max-width: 100px;
   height: auto;
 }
 .nav1 ul li a {
@@ -85,7 +85,7 @@ header .header_horizontal_line {
   flex-direction: row;
   max-width: 90%;
   align-content: normal;
-  margin: 20px;
+  margin: 0px;
   pad: 10px;
 }
 
@@ -117,7 +117,7 @@ form {
 #messageForm {
   display: flex;
   flex-direction: column;
-  width: 400px%;
+  width: 400px;
 }
 
 fieldset {
