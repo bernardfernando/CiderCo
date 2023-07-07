@@ -6,7 +6,7 @@ body {
   background-color: yellowgreen;
   line-height: 1.6rem;
   letter-spacing: 0.02;
-  margin-left: 20px;
+  margin-left: 30px;
   align-content: center;
 }
 section .container1 {
@@ -29,6 +29,46 @@ header img {
   max-width: 250px;
   height: auto;
 }
+
+.img_log {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  @keyframes imageAnimation {
+    0% {
+      transform: scale(1); /* Initial state */
+    }
+    50% {
+      transform: scale(1.2); /* Intermediate state */
+    }
+    100% {
+      transform: scale(1); /* Final state */
+    }
+  }
+
+  #animated-image {
+    animation: imageAnimation 2s ease-in-out infinite;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 .nav1 ul li a {
   display: flex;
   flex-direction: row;
@@ -75,24 +115,44 @@ header .header_horizontal_line {
   color: rgb(179, 0, 0);
   border: none;
 }
+.img_text {
+  display: flex;
+  flex-direction: row;
+  align-content: first baseline;
+  margin-right: 20px;
+  max-width: 800px;
+  padding-left: 20px;
+}
+.image_aboutus1 img {
+  max-width: 250px;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  border-radius: 4px;
+  padding: 5px;
+  margin-left: 30px;
+}
+.text_aboutus1 p,
+h2 {
+  margin-left: 20px;
+}
 
-table,
-th,
-tr,
-td {
-  border: 1px solid salmon;
-  border-collapse: collapse;
-  white-space: nowrap;
-  padding: 1rem;
-  text-align: right;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 5px;
+h2 {
+  color: rgb(179, 0, 0);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
-th {
-  font-weight: bold;
+
+p {
+  color: rgb(179, 0, 0);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-#complaintsTable {
-  margin: 10px;
+
+.labels_4 > img {
+  max-width: 65px;
+  height: auto;
+  align-items: center;
 }
 
 footer {
@@ -156,17 +216,4 @@ footer hr.horizontal_line {
   font-size: 20px;
   border-radius: 4%;
   color: rgb(179, 0, 0);
-}
-
-#messages {
-  max-width: 150px;
-  height: 30px;
-  border: rgb(179, 0, 0);
-  background-color: green;
-  margin-left: 10px;
-}
-
-#messages::hover {
-  background-color: rgba(255, 0, 0, 0.5);
-  border: 1px;
 }

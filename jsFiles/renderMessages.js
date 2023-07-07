@@ -98,8 +98,15 @@ checkLocalStorage();
 
 // ============================
 /////chart data
-const users = ["consumer", "customer", "authority"];
+const users = ["consumer", "consumer", "authority"];
 const complaintCategories = [
+  "Food Safety",
+  "Cider Quality",
+  "Packaging Quality",
+  "Delivery issue",
+  "Feedback",
+];
+const formCategories = [
   "Name",
   "Telephone",
   "E-mail Address",
@@ -119,9 +126,118 @@ function createTableHeaders() {
   const th = document.createElement("th");
   table.appendChild(tr);
 
-  for (let i = 0; i < complaintCategories.length; i++) {
+  for (let i = 0; i < formCategories.length; i++) {
     const th = document.createElement("th");
-    th.textContent = complaintCategories[i];
+    th.textContent = formCategories[i];
     tr.appendChild(th);
   }
 }
+
+//complaints stats
+
+for (let i = 0; i < messageLog.length; i++) {
+  if (
+    this.userCategory == "consumer" &&
+    this.complainsCategory == "Food Safety issue"
+  ) {
+    let conFoodSafetyComplaints = +conFoodSafetyComplaints;
+  } else if (
+    this.userCategory == "consumer" &&
+    this.complainsCategory == "Food quality issue"
+  ) {
+    let conFoodQualityComplaints = +conFoodQualityComplaints;
+  } else if (
+    this.userCategory == "consumer" &&
+    this.complainsCategory == "Packaging issue"
+  ) {
+    let conPackComplaints = +conPackComplaints;
+  } else if (
+    this.userCategory == "consumer" &&
+    this.complainsCategory == "Delivery issue"
+  ) {
+    let conDeliveryComplaints = +conDeliveryComplaints;
+  } else if (
+    this.userCategory == "consumer" &&
+    this.complainsCategory == "Feedback"
+  ) {
+    let conFeedback = +conFeedback;
+  } else if (
+    this.userCategory == "customer" &&
+    this.complainsCategory == "Food safety issue"
+  ) {
+    cusFoodQualityComplaints = +cusFoodQualityComplaints;
+  } else if (
+    this.userCategory == "customer" &&
+    this.complainsCategory == "Food quality issue"
+  ) {
+    let conFoodQualityComplaints = +conFoodQualityComplaints;
+  } else if (
+    this.userCategory == "customer" &&
+    this.complainsCategory == "Packaging issue"
+  ) {
+    let cusPackComplaints = +cusPackComplaints;
+  } else if (
+    this.userCategory == "customer" &&
+    this.complainsCategory == "Delivery issue"
+  ) {
+    let cusDeliveryComplaints = +cusDeliveryComplaints;
+  } else if (
+    this.userCategory == "customer" &&
+    this.complainsCategory == "Feedback"
+  ) {
+    let cusFeedback = +cusFeedback;
+  } else if (
+    this.userCategory == "authority" &&
+    this.complainsCategory == "Food Safety issue"
+  ) {
+    let authFoodSafetyComplaints = +authFoodSafetyComplaints;
+  } else if (
+    this.userCategory == "authority" &&
+    this.complainsCategory == "Food quality issue"
+  ) {
+    let authFoodQualityComplaints = +authFoodQualityComplaints;
+  } else if (
+    this.userCategory == "authority" &&
+    this.complainsCategory == "Packaging issue"
+  ) {
+    let authPackComplaints = +authPackComplaints;
+  } else if (
+    this.userCategory == "authority" &&
+    this.complainsCategory == "Delivery issue"
+  ) {
+    let authDeliveryComplaints = +authDeliveryComplaints;
+  } else if (
+    this.userCategory == "authority" &&
+    this.complainsCategory == "Feedback"
+  ) {
+    let authFeedback = +authFeedback;
+  }
+}
+console.log(conFoodSafetyComplaints);
+
+//complaint stats
+///* introduce a table here  */
+const statsTable = document.getElementById("stats");
+const sTable = document.createElement("table");
+// table headers
+statsTable.appendChild(sTable);
+function createStatsTableHeaders() {
+  const tr = document.createElement("tr");
+  sTable.appendChild(tr);
+  const userTypeHeader = document.createElement("th");
+  userTypeHeader.textContent = "User Type";
+  tr.appendChild(userTypeHeader);
+  for (let i = 0; i < complaintCategories.length; i++) {
+    const categoryHeader = document.createElement("th");
+    categoryHeader.textContent = complaintCategories[i];
+    tr.appendChild(categoryHeader);
+  }
+  const subTotalsHeader = document.createElement("th");
+  subTotalsHeader.textContent = "Sub Totals";
+  r;
+  tr.appendChild(subTotalsHeader);
+}
+createStatsTableHeaders();
+// const consumer = [];
+// const consumer = [];
+// const authority = [];

@@ -83,7 +83,7 @@ header .header_horizontal_line {
 .form_Etc_Section {
   display: flex;
   flex-direction: row;
-  max-width: 90%;
+  max-width: 100%;
   align-content: normal;
   margin: 0px;
   pad: 10px;
@@ -97,12 +97,12 @@ header .header_horizontal_line {
 }
 
 .form_Etc_Section:nth-child(2) {
-  width: 80%;
+  width: 100%;
 }
 
 form {
   border: 1px solid salmon;
-  width: 80%;
+  width: 100%;
   max-width: 450px;
   display: flex;
   margin-top: 1rem;
@@ -117,7 +117,7 @@ form {
 #messageForm {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 450px;
 }
 
 fieldset {
@@ -168,7 +168,7 @@ input[type="date"] {
 }
 
 input[type="submit"] {
-  width: 100%;
+  width: 80%;
   background-color: rgba(255, 0, 0, 0.5);
   padding: 14px 20px;
   margin: 8px 0;
@@ -182,7 +182,7 @@ button {
   background-color: rgb(35, 211, 22);
   margin-top: 40px;
   padding-top: 5px;
-  width: 100%;
+  width: 60%;
   margin-left: 10px;
   border-radius: 4px;
   max-height: 40px;
@@ -194,7 +194,7 @@ button[type="submit"]:hover {
   background-color: rgba(255, 0, 0, 100);
   margin-top: 40px;
   padding-top: 5px;
-  width: 100%;
+  width: 60%;
   border-radius: 4px;
   max-height: 40px;
   border-color: rgb(179, 0, 0);
@@ -205,6 +205,7 @@ button[type="submit"]:hover {
   display: flex;
   flex-direction: row;
   align-content: space-between;
+  max-width: 80%;
 }
 
 footer {
