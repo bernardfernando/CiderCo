@@ -1,15 +1,14 @@
 .swing img {
-  animation: swing ease-in-out 1s infinite alternate;
+  animation: example ease-in-out 5s infinite alternate;
   transform-origin: center -20px;
   float: left;
-  animation: move ease-in-out 5s infinite alternate;
   /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);*/
 }
 /*.swing img {
   border: 5px solid #f8f8f8;
   display: block;
-} */
-/*.swing:after {
+}
+.swing:after {
   content: "";
   position: absolute;
   width: 20px;
@@ -22,7 +21,7 @@
   border-right: none;
   transform: rotate(45deg);
 }
-nail
+ nail 
 .swing:before {
   content: "";
   position: absolute;
@@ -33,13 +32,22 @@ nail
   z-index: 5;
   border-radius: 50% 50%;
   background: #000;
-} */
-
+}*/
+/*
 @keyframes swing {
   0% {
     transform: rotate(3deg);
   }
   100% {
     transform: rotate(-3deg);
+  }
+}*/
+
+@keyframes example {
+  from {
+    transform: tanslateX(0);
+  }
+  to {
+    transform: translateX(300px);
   }
 }

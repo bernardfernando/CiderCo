@@ -1,0 +1,14 @@
+.move img {
+  animation-name: example;
+  animation-duration: 4s;
+  position: fixed;
+}
+
+@keyframes example {
+  from {
+    transform: tanslateX(0);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}

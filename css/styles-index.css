@@ -187,3 +187,18 @@ footer hr.horizontal_line {
 .social_media img {
   max-width: 50px;
 }
+
+.swing img {
+  animation: example ease-in-out 5s infinite alternate;
+  transform-origin: center -20px;
+  float: left;
+}
+
+@keyframes example {
+  from {
+    transform: tanslateX(0);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
