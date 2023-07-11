@@ -18,7 +18,7 @@ let maxTurns = 25;
 }
 Math.random();*/
 
-function LabelSeclector(labelName, src) {
+function LabelSelector(labelName, src) {
   this.labelName = labelName;
   this.src = src;
   this.clicks = clicks = 0;
@@ -125,7 +125,7 @@ function checkLocalStorage() {
     allLabels = localLabels;
   } else {
     for (let i = 0; i < newLabelRange.length; i++) {
-      new LabelSeclector(
+      new (
         newLabelRange[i],
         `images/` + newLabelRange[i] + `.svg`
       );

@@ -40,10 +40,11 @@ function collectFormData() {
     userTelephone,
     userEmail,
     userCategory,
-    complaintsCategory,
+    messageCategoryCategory,
     briefDescription,
     messageDate
   );
+  console.log(ccf);
 }
 
 function generateId() {
