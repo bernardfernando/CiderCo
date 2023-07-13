@@ -1,5 +1,8 @@
 "use strict";
 console.log("yest it works");
+// import CustomerComplaintFeedback from "/jsFiles/renderMessages.js";
+
+let messageLog = [];
 
 // selecting the form
 const form = document.getElementById("messageForm");
@@ -8,7 +11,7 @@ const form = document.getElementById("messageForm");
 
 // add an event listener
 form.addEventListener("submit", onFormSubmit);
-
+console.log("check submit");
 // create fallback function important to prevent the default action of the submit event to avoid triggering a page reload to do this event.preventDefault() is used
 function onFormSubmit(event) {
   event.preventDefault();
@@ -34,19 +37,47 @@ function collectFormData() {
   //   Brief Description : ${briefDescription},
   //   Date: ${messageDate}`
   // );
+  // constructor function
 
   const ccf = new CustomerComplaintFeedback(
     userName,
     userTelephone,
     userEmail,
     userCategory,
-    messageCategoryCategory,
+    messageCategory,
     briefDescription,
     messageDate
   );
   console.log(ccf);
 }
 
+function CustomerComplaintFeedback(
+  userName,
+  userTelephone,
+  userEmail,
+  userCategory,
+  complaintsCategory,
+  briefDescription,
+  date
+) {
+  this.userName = userName;
+  this.userTelephone = userTelephone;
+  this.userEmail = userEmail;
+  this.userCategory = userCategory;
+  this.complaintsCategory = complaintsCategory;
+  this.briefDescription = briefDescription;
+  this.date = date;
+  messageLog.push(this);
+  setLocalStorage();
+}
+
 function generateId() {
   let complaintsId = this.userName + messageLog.length(pushComplaint) + 1;
+  console.log("check submit  ss");
+}
+
+// passing information to local storage
+function setLocalStorage() {
+  localStorage.setItem("messages", JSON.stringify(messageLog));
+  console.log("messageLog:  " + messageLog);
 }
