@@ -1,6 +1,7 @@
 "use strict";
 let messagesLog = [];
 
+// here the id of the button is 'messages'
 const viewMessageButton = document.getElementById("messages");
 if (viewMessageButton) {
   viewMessageButton.addEventListener("click", renderMessages);
@@ -42,7 +43,7 @@ function checkLocalStorage() {
 //   setLocalStorage();
 // }
 
-// counting clicks
+// contents of the table
 function renderMessages() {
   console.log("message");
   // create the table headers
