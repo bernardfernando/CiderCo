@@ -42,47 +42,13 @@ section .container1 {
 }
 
 header img {
-  max-width: 200px;
+  max-width: 300px;
   height: auto;
 }
 
 .img_logo {
-  max-width: 250px;
+  max-width: 350px;
   height: auto;
-}
-.nav1 ul li a {
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  width: 100px;
-  height: 30px;
-  margin: 5px;
-  padding: 5px;
-  text-align: center;
-  font-size: 20px;
-  list-style-type: none;
-  border-radius: 4%;
-  color: rgb(179, 0, 0);
-  font-weight: 400;
-  list-style: none;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-ul,
-.nav1 li a {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-content: space-around;
-  text-align: center;
-  list-style-type: none;
-  text-decoration: none;
-}
-
-a:hover {
-  background-color: rgba(255, 0, 0, 0.5);
-  border: 1px;
 }
 
 h1 {
@@ -97,32 +63,69 @@ header .header_horizontal_line {
   border: none;
 }
 
-video {
-  height: auto;
-  max-width: 340px;
+/* css for access control */
+
+/*#accessForm {
+  width: 100px;
+  height: 50px;
+  background-color: green;
+  color: rgb(179, 0, 0);
+  margin-top: 50px;
+} */
+
+/* login form * button at bottom */
+/*.open-button {
+  background-color: rgb(240, 162, 162);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 280px;
 }
-.vid_text {
+*/
+/*  add style to form container */
+.formContainer {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgb(179, 194, 26);
   display: flex;
   flex-direction: column;
-  align-content: space-between;
-  margin-top: 30px;
-  max-width: 90%;
-}
-.vid_text p {
-  min-width: 100px;
+  margin-top: 50px;
+  border-radius: 4%;
+  color: rgba(255, 0, 0, 0.5);
+  font-weight: 700;
 }
 
-.vid_text h2,
-p {
-  color: rgb(179, 0, 0);
+/* full width input field */
+.formContainer input[type="number"] {
+  width: 100px;
+  padding: 20px;
+  margin: 20px 0 20px 0;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  background-color: rgb(179, 194, 26);
 }
-.vid_text > div {
-  margin-left: 20px;
+/* when the inputs get focus do something */
+.formContainer input[type="number"]:focus {
+  background: #ddd;
+  outline: none;
 }
-.labels_4 > img {
-  max-width: 65px;
-  height: auto;
-  align-items: center;
+
+/* set a style for the submit lognin button */
+.formContainer .btn {
+  background-color: rgb(159, 168, 62);
+  color: rgba(255, 0, 0, 0.5);
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  border-radius: 4%;
+  font-size: 1.6rem;
 }
 
 footer {
@@ -201,90 +204,4 @@ footer hr.horizontal_line {
   to {
     transform: translateX(300px);
   }
-}
-
-/* css for access control */
-#staffButt {
-  width: 100px;
-  height: 50px;
-  background-color: green;
-  color: rgb(179, 0, 0);
-}
-table > tr,
-th,
-td {
-  width: 200px;
-  margin-right: 20px;
-  border: 1px solid rgb(179, 0, 0);
-  height: 50px;
-  background-color: rgb(223, 125, 125);
-}
-
-table > th {
-  background-color: rgb(227, 148, 148);
-  color: rgb(179, 0, 0);
-}
-
-/* login form * button at bottom */
-.open-button {
-  background-color: rgb(240, 162, 162);
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  width: 280px;
-}
-/* pop up form hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  border: 3px solid #f1f1f1;
-}
-
-/*  add style to form container */
-.formContainer {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-}
-
-/* full width input field */
-.formContainer input[type="text"],
-.formContainer input[type="password"] {
-  width: 100px;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background-color: #f1f1f1;
-}
-/* when the inputs get focus do something */
-.formContainer input[type="text"]:focus,
-.formContainer input[type="password"]:focus {
-  background: #ddd;
-  outline: none;
-}
-
-/* set a style for the submit lognin button */
-.formContainer .btn {
-  background-color: royalblue;
-  color: white;
-  padding: 16px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom: 10px;
-  opacity: 0.8;
-}
-
-/* add a red background colour to the cancel buttone */
-.formContainer .cancel {
-  background-color: red;
 }

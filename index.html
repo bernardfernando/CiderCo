@@ -24,54 +24,29 @@
               />
             </figure>
           </div>
-          <div class="nav1">
-            <ul>
-              <li><a href="about_us.html">About Us</a></li>
-              <li><a href="contacts.html">Contacts</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="complaints.html">Complaints</a></li>
-              <li><a href="surveys.html">Surveys</a></li>
-              <li><a href="messages.html">Messages</a></li>
-              <li><a href="home.html">Home</a></li>
-            </ul>
-          </div>
         </div>
       </section>
     </header>
+
     <main>
-      
       <!-- web access control -->
 
-  <div id="accessForm" class="form-popup">
-    <form class="formContainer">
-      <h1>Staff access</h1>
-      <label for="staffName">User Name</label>
-      <input
-        type="text"
-        placeholder="Enter staff name"
-        name="staffName"
-        id="staffName"
-        required
-      />
-      <label for="psw">Password</label>
-      <input
-        type="password"
-        placeholder="Enter password"
-        name="password"
-        id="password"
-        required
-      />
-      <button type="submit" class="btn" id="loginButton">Login</button>
-      <button type="button" class="btn cancel" id="cancelButton">
-        Close
-      </button>
-    </form>
-  </div>
-
-
-</div>
-
+      <div id="accessControl" class="accessControl">
+        <form class="formContainer">
+          <h1>User Access</h1>
+          <label for="ageOfUser">Enter your age</label>
+          <input
+            type="number"
+            placeholder="Enter Age"
+            name="userAge"
+            id="userAge"
+            required
+          />
+          <button type="submit" class="btn" id="accessButton">Access</button>
+        </form>
+      </div>
     </main>
+
     <footer>
       <hr class="horizontal_line" />
       <div class="footer1">
@@ -94,5 +69,6 @@
         </div>
       </div>
     </footer>
+    <script src="jsFiles/entry.js"></script>
   </body>
 </html>
